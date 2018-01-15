@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+          crossorigin="anonymous">
+</head>
+<body>
+    <div class="container1">
+        <nav class="navbar navbar-inverse myNav">
+            <img src="https://orig00.deviantart.net/f6eb/f/2011/131/9/9/ship_logo_by_jb_online-d3g4dnj.png" class="logoClass">
+            <h2 class="navbar-text">Salvo Battleship Game</h2>
+            <p id="userEmailId" class="userEmailCl"></p>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <button class="dropbtn" data-toggle="dropdown" href="#">Menu<span class="caret"></span></button>
+                    <div class="dropdown-content">
+                        <div><a href="http://localhost:8080/web/games.html" id="gamesButtonId">Games</a></div>
+                        <!--<div><a href="#" id="leaderBoardButonId">Leaderboard</a></div>-->
+                        <div><a href="#" id="logOutButtonId">Logout</a></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="gamesListDivCl">
+            <div class="createGameButtonDiv">
+                <button id="createGameButton" class="buttonCl">Create a New Game</button>
+            </div>
+            <div class="myTable">
+                <table class="table-bordered leaderBoardClass" id="tableId">
+                    <thead>
+                        <tr>
+                            <th>Game ID</th>
+                            <th>Players</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="leaderBoardDiv" id="leaderBoardDivId">
+            <h3 style="text-align: center">Leaderboard!</h3>
+            <div class="myTable">
+                <table class="table-bordered leaderboardClass">
+
+                    <thead>
+                    <th>Player Email</th>
+                    <th>Total Scores</th>
+                    <th>Total Games Won</th>
+                    <th>Total Games Tied</th>
+                    <th>Total Games Lost</th>
+                    </thead>
+                    <tbody id="leaderBoardId">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="text-align:center; padding:30px">
+            <h7 style="color:white;">Made by Nikita @UbiqumTeam.co</h7>
+        </div>
+    </div>
+    <script src="games.js"></script>
+</body>
+</html>

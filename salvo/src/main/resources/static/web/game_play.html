@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Ship Locations!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div class="container1">
+            <nav class="navbar navbar-inverse myNav">
+                <img src="https://orig00.deviantart.net/f6eb/f/2011/131/9/9/ship_logo_by_jb_online-d3g4dnj.png" class="logoClass">
+                <h2 class="navbar-text">Salvo Battleship Game</h2>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <button class="dropbtn" data-toggle="dropdown" href="#">Menu<span class="caret"></span></button>
+                        <div class="dropdown-content">
+                            <div><a href="http://localhost:8080/web/games.html" id="playButtonId">Games</a></div>
+                            <div><a href="" id="logOutButtonId">Logout</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="gamePlayDivId">
+                <div class="titleDivCl">
+                    <h5 id="playerId" class="playersTitleCl"></h5>
+                    <h5 id="enemyId" class="playersTitleCl"></h5>
+                    <!--<button id="startPlayButtonId">Start</button>-->
+                </div>
+                <div class="tablesDivCl grid">
+                    <div id="yourTableId" class="gridClass grid-item">
+                        <h5 class="gridTitleClass">Your Ships</h5>
+                    </div>
+                    <div id="enemiesTableId" class="gridClass grid-item">
+                        <h5 class="gridTitleClass">Your Shots</h5>
+                    </div>
+                    <button id="makeShotsButtonID">Shoot!</button>
+                    <div id="shipsContainerId" class="gridClass grid-item">
+                        <h5 class="gridTitleClass">Drag Ships to your Grid</h5>
+                        <div class="shipsContainerClass" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div id="drop1" class="carrier_dr draggable" draggable="true" ondragstart="drag(event)" ><a id="carrier_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="carrier" data-align="horizontal"></div></div>
+                            <div id="drop2" class="battleship_dr draggable" draggable="true" ondragstart="drag(event)"><a id="battleship_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="battleship" data-align="horizontal"></div></div>
+                            <div id="drop3" class="submarine_dr draggable" draggable="true" ondragstart="drag(event)"><a id="submarine_rotate" class="rotate_a" ><img class="h_v" src="rotate-icon.png"></a><div class="submarine" data-align="horizontal"></div></div>
+                            <div id="drop4" class="destroyer_dr draggable" draggable="true" ondragstart="drag(event)"><a id="destroyer_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="destroyer" data-align="horizontal"></div></div>
+                            <div id="drop5" class="patrol_boat_dr draggable" draggable="true" ondragstart="drag(event)"><a id="patrol_boat_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="patrol_boat" data-align="horizontal"></div></div>
+
+                            <button id="putShipsButtonId" type="submit" value="Start" class="buttonCl startButton">Ready!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="shipLocationsListId">
+                </div>
+                <br>
+                <div id="salvoesLocationListId">
+                </div>
+                <br>
+                <div id="enemiesSalvoesListId">
+                </div>
+                <br>
+            </div>
+            <div style="text-align:center; padding:30px">
+                <h7 style="color:white;">Made by Nikita @UbiqumTeam.co</h7>
+            </div>
+        </div>
+        <script src="game_play.js"></script>
+    </body>
+</html>
+
