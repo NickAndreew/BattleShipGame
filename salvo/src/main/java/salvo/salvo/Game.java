@@ -20,6 +20,8 @@ public class Game {
     @OneToMany(mappedBy="game", fetch = FetchType.EAGER)
     private Set<Score> score = new HashSet<>();
 
+    private boolean over = false;
+
     public Game() {
         Date newDate = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD HH:MM:SS");
@@ -71,5 +73,13 @@ public class Game {
 
     public void setScore(Set<Score> score) {
         this.score = score;
+    }
+
+    public boolean isOver() {
+        return over;
+    }
+
+    public void setOver(boolean over) {
+        this.over = over;
     }
 }

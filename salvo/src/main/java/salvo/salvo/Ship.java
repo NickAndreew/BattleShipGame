@@ -1,10 +1,7 @@
 package salvo.salvo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.*;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Entity
 public class Ship {
@@ -27,7 +24,7 @@ public class Ship {
 
     private Type type;
 
-//    private GamePlayRepository gamePlayRepository;
+    private boolean sunk = false;
 
     @ElementCollection
     private List<String> location;
@@ -38,16 +35,18 @@ public class Ship {
 
     public Ship (List<String> location, String type) {
         this.location = location;
+        this.sunk = false;
 
-        if (type == "carrier"){
+
+        if (type == "CARRIER"){
             this.type = Type.CARRIER;
-        } else if (type == "battleship"){
+        } else if (type == "BATTLESHIP"){
             this.type = Type.BATTLESHIP;
-        } else if (type == "submarine"){
+        } else if (type == "SUBMARINE"){
             this.type = Type.SUBMARINE;
-        } else if (type == "destroyer"){
+        } else if (type == "DESTROYER"){
             this.type = Type.DESTROYER;
-        } else if (type == "patrol_boat") {
+        } else if (type == "PATROL_BOAT") {
             this.type = Type.PATROL_BOAT;
         }
     }
@@ -84,17 +83,12 @@ public class Ship {
         this.location = location;
     }
 
-    public boolean getSubmarineType(){
-        System.out.println("This is 'this' ------------------->  "+this.gamePlay.getShips());
-        List<Type> types = this.gamePlay.getShips()
-                .stream()
-                .map(ship -> (ship.getType()))
-                .collect(Collectors.toList());
-        if(types.contains(Type.SUBMARINE)){
-            return true;
-        } else {
-            return false;
-        }
+    public boolean isSunk(){
+        return this.sunk;
+    }
 
+    public boolean setSunk(){
+        this.sunk = true;
+        return this.sunk;
     }
 }

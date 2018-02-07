@@ -38,30 +38,32 @@ public class SalvoApplication {
 	@Bean
 	public CommandLineRunner initData(PlayerRepository playerRepository, GameRepository gameRepository, GamePlayRepository gamePlayRepository, ShipsRepository shipsRepository, SalvoRepository salvoRepository, ScoreRepository scoreRepository){
 		return (String... args) -> {
-			Player player1 = playerRepository.save(new Player("name1@mail.com", "qwerty"));
-			Player player2 = playerRepository.save(new Player("name2@mail.com", "qwerty"));
-			Player player3 = playerRepository.save(new Player("stupidPlayer@mail.com", "qwerty"));
-			Player player4 = playerRepository.save(new Player("stupidPlayer1@mail.com", "qwerty"));
-
-			Game game1 = gameRepository.save(new Game());
-			Game game2 = gameRepository.save(new Game());
-
-			List<String> one1 = Arrays.asList("A1","A2", "A3", "A4", "A5");
-			List<String> two1 = Arrays.asList("B3", "B4", "B5", "B6");
-			List<String> three1 = Arrays.asList("C8", "C9", "C10");
-			List<String> four1 = Arrays.asList("G5", "G4", "G3");
-			List<String> five1 = Arrays.asList("J5", "J6");
-
-			List<String> one2 = Arrays.asList("F1","F2", "F3", "F4", "F5");
-			List<String> two2 = Arrays.asList("B6", "B7", "B8", "B9");
-			List<String> three2 = Arrays.asList("E5", "E6", "E7");
-			List<String> four2 = Arrays.asList("C5", "C6", "C7");
-			List<String> five2 = Arrays.asList("D5", "D6");
-
-			GamePlay gamePlay1 = gamePlayRepository.save(new GamePlay(player1, game1));
-			GamePlay gamePlay2 = gamePlayRepository.save(new GamePlay(player2, game1));
-
-			GamePlay gamePlay3 = gamePlayRepository.save(new GamePlay(player3, game2));
+//			Player player1 = playerRepository.save(new Player("name1@mail.com", "qwerty"));
+//			Player player2 = playerRepository.save(new Player("name2@mail.com", "qwerty"));
+//			Player player3 = playerRepository.save(new Player("stupidPlayer@mail.com", "qwerty"));
+//			Player player4 = playerRepository.save(new Player("stupidPlayer1@mail.com", "qwerty"));
+//
+//			Game game1 = gameRepository.save(new Game());
+//			Game game2 = gameRepository.save(new Game());
+//
+//			List<String> one1 = Arrays.asList("A1","A2", "A3", "A4", "A5");
+//			List<String> two1 = Arrays.asList("B3", "B4", "B5", "B6");
+//			List<String> three1 = Arrays.asList("C8", "C9", "C10");
+//			List<String> four1 = Arrays.asList("G5", "G4", "G3");
+//			List<String> five1 = Arrays.asList("J5", "J6");
+//
+//			List<String> one2 = Arrays.asList("F1","F2", "F3", "F4", "F5");
+//			List<String> two2 = Arrays.asList("B6", "B7", "B8", "B9");
+//			List<String> three2 = Arrays.asList("E5", "E6", "E7");
+//			List<String> four2 = Arrays.asList("C5", "C6", "C7");
+//			List<String> five2 = Arrays.asList("D5", "D6");
+//
+//			GamePlay gamePlay1 = gamePlayRepository.save(new GamePlay(player1, game1));
+//			GamePlay gamePlay2 = gamePlayRepository.save(new GamePlay(player2, game1));
+//
+//			GamePlay gamePlay3 = new GamePlay(player3, game2);
+//			gamePlay3.setType(true);
+//			gamePlayRepository.save(gamePlay3);
 //			GamePlay gamePlay4 = gamePlayRepository.save(new GamePlay(player4, game2));
 //
 //			Ship shipOne = shipsRepository.save(new Ship(one1, "carrier"));
@@ -93,11 +95,6 @@ public class SalvoApplication {
 //			Salvo salvo3 = salvoRepository.save(new Salvo(salvoLocation3, gamePlay1, 3));
 //			Salvo salvo6 = salvoRepository.save(new Salvo(salvoLocation6, gamePlay2, 3));
 
-			Date date = new Date();
-			Date date1 = new Date();
-
-			Score score = scoreRepository.save(new Score(game1, player1, 1, date));
-			Score score1 = scoreRepository.save(new Score(game1, player2, 0, date1));
 
 		};
 	}

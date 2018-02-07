@@ -66,11 +66,17 @@ public class Player {
         this.password = password;
     }
 
-    public List<Score> getScoreFromGame (Game game){
+    public Score getScore (Game game){
         List<Score> scoresList = game.getScore()
                 .stream()
                 .collect(toList());
-        return scoresList;
+        Score score = null;
+        for(int i = 0 ; i <= scoresList.size()-1 ; i++){
+            if(scoresList.get(i).getGame().getId()==game.getId()){
+                score = scoresList.get(i);
+            }
+        }
+        return score;
     }
 
     public int scoresTotal(){
@@ -114,5 +120,4 @@ public class Player {
         }
         return tieCount;
     }
-
 }

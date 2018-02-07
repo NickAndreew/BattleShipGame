@@ -10,12 +10,17 @@
               crossorigin="anonymous">
         <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     </head>
     <body>
         <div class="container1">
             <nav class="navbar navbar-inverse myNav">
                 <img src="https://orig00.deviantart.net/f6eb/f/2011/131/9/9/ship_logo_by_jb_online-d3g4dnj.png" class="logoClass">
                 <h2 class="navbar-text">Salvo Battleship Game</h2>
+                <p id="userEmailId" class="userEmailCl"></p>
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <button class="dropbtn" data-toggle="dropdown" href="#">Menu<span class="caret"></span></button>
@@ -27,47 +32,164 @@
                 </ul>
             </nav>
 
-            <div id="gamePlayDivId">
-                <div class="titleDivCl">
-                    <h5 id="playerId" class="playersTitleCl"></h5>
-                    <h5 id="enemyId" class="playersTitleCl"></h5>
-                    <!--<button id="startPlayButtonId">Start</button>-->
-                </div>
-                <div class="tablesDivCl grid">
-                    <div id="yourTableId" class="gridClass grid-item">
-                        <h5 class="gridTitleClass">Your Ships</h5>
-                    </div>
-                    <div id="enemiesTableId" class="gridClass grid-item">
-                        <h5 class="gridTitleClass">Your Shots</h5>
-                    </div>
-                    <button id="makeShotsButtonID">Shoot!</button>
-                    <div id="shipsContainerId" class="gridClass grid-item">
-                        <h5 class="gridTitleClass">Drag Ships to your Grid</h5>
-                        <div class="shipsContainerClass" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <div id="drop1" class="carrier_dr draggable" draggable="true" ondragstart="drag(event)" ><a id="carrier_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="carrier" data-align="horizontal"></div></div>
-                            <div id="drop2" class="battleship_dr draggable" draggable="true" ondragstart="drag(event)"><a id="battleship_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="battleship" data-align="horizontal"></div></div>
-                            <div id="drop3" class="submarine_dr draggable" draggable="true" ondragstart="drag(event)"><a id="submarine_rotate" class="rotate_a" ><img class="h_v" src="rotate-icon.png"></a><div class="submarine" data-align="horizontal"></div></div>
-                            <div id="drop4" class="destroyer_dr draggable" draggable="true" ondragstart="drag(event)"><a id="destroyer_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="destroyer" data-align="horizontal"></div></div>
-                            <div id="drop5" class="patrol_boat_dr draggable" draggable="true" ondragstart="drag(event)"><a id="patrol_boat_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="patrol_boat" data-align="horizontal"></div></div>
+            <div class="alertsDiv">
+                <h7 id="alertMessage">Alert message Box</h7>
+            </div>
 
-                            <button id="putShipsButtonId" type="submit" value="Start" class="buttonCl startButton">Ready!</button>
+            <div id="gameViewOnload">
+                <div id="allStatsDivId">
+
+                    <div id="gameOverStatsId">
+                        <div id="gameOverDivId">
+                            <p id="stateGameOverId" class="playersTitleCl"></p>
+                            <!--<img src="https://i.ytimg.com/vi/QZsCYAanNYg/maxresdefault.jpg" class="gameOverImgCl">-->
+                        </div>
+
+                        <h3 class="gameOverHeaderCl">STATS</h3>
+
+                        <div class="statsTablesDivCl">
+                            <table class="table-striped table-condenced statsCl">
+                                <thead>
+                                    <tr>
+                                        <th>Your Stats</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shots:</td>
+                                        <td id="yourShotsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hits:</td>
+                                        <td id="yourHitsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Misses:</td>
+                                        <td id="yourMissesId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ships sunked:</td>
+                                        <td id="yourShipsSunkedId"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table-striped table-condenced statsCl">
+                                <thead>
+                                    <tr>
+                                        <th>Enemies Stats</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shots:</td>
+                                        <td id="enemyShotsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hits:</td>
+                                        <td id="enemyHitsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Misses:</td>
+                                        <td id="enemyMissesId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ships sunked:</td>
+                                        <td id="enemyShipsSunkedId"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div id="shipLocationsListId" style="display: none;">
+                    </div>
+
+                    <br>
+
+                    <div id="salvoesLocationListId">
+                    </div>
+
+                    <br>
+
+                    <div id="enemiesSalvoesListId">
+                    </div>
+                </div>
+                <div id="gamePlayDivId">
+                    <div class="tablesDivCl">
+                        <div id="yourTableId" class="gridClass">
+                            <h5 class="gridTitleClass">Your Ships</h5>
+                        </div>
+                        <div id="gameStateId">
+                            <div class="titleDivCl">
+                                <div class="gameStateInfoCl">
+                                    <p id="playerId" class="playersTitleCl"></p>
+                                    <p id="enemyId" class="playersTitleCl"></p>
+                                    <p id="stateId" class="playersTitleCl"></p>
+                                    <p id="hostJoinId" class="playersTitleCl"></p>
+                                </div>
+                            </div>
+                            <div id="enemyShipsConditionDivId" class="gameHistoryDivCl">
+                                <table class="table-striped table-condenced">
+                                    <thead>
+                                    <tr>
+                                        <th>Enemy Ships</th>
+                                        <th>Your Hits</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="enemyShipsConditionTableId">
+                                    <tr>
+                                        <td><div id="carrierPicId" class="carrier1"></div></td>
+                                        <td id="carrierShotsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div id="battleshipPicId" class="battleship1"></div></td>
+                                        <td id="battleshipShotsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div id="submarinePicId" class="submarine1"></div></td>
+                                        <td id="submarineShotsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div id="destroyerPicId" class="destroyer1"></div></td>
+                                        <td id="destroyerShotsId"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div id="patrol_boatPicId" class="patrol_boat1"></div></td>
+                                        <td id="patrol_boatShotsId"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <button id="makeShotsButtonID" class="buttonCl">Shoot!</button>
+                            <button id="putShipsButtonId" type="submit" value="Start" class="buttonCl">Ready!</button>
+
+                        </div>
+                        <div id="enemiesTableId" class="gridClass1">
+                            <h5 class="gridTitleClass">Your Shots</h5>
+                        </div>
+                        <div id="shipsContainerId" class="gridClass1">
+                            <h5 class="gridTitleClass">Drag Ships to your Grid</h5>
+                            <div class="shipsContainerClass" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="drop1" class="carrier_dr draggable" draggable="true" ondragstart="drag(event)" ><a id="carrier_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="carrier" data-align="horizontal"></div></div>
+                                <div id="drop2" class="battleship_dr draggable" draggable="true" ondragstart="drag(event)"><a id="battleship_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="battleship" data-align="horizontal"></div></div>
+                                <div id="drop3" class="submarine_dr draggable" draggable="true" ondragstart="drag(event)"><a id="submarine_rotate" class="rotate_a" ><img class="h_v" src="rotate-icon.png"></a><div class="submarine" data-align="horizontal"></div></div>
+                                <div id="drop4" class="destroyer_dr draggable" draggable="true" ondragstart="drag(event)"><a id="destroyer_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="destroyer" data-align="horizontal"></div></div>
+                                <div id="drop5" class="patrol_boat_dr draggable" draggable="true" ondragstart="drag(event)"><a id="patrol_boat_rotate" class="rotate_a"><img class="h_v" src="rotate-icon.png"></a><div class="patrol_boat" data-align="horizontal"></div></div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div id="shipLocationsListId">
-                </div>
-                <br>
-                <div id="salvoesLocationListId">
-                </div>
-                <br>
-                <div id="enemiesSalvoesListId">
-                </div>
-                <br>
+            <div id="gameViewUnloadedId">
+                <p>Waiting for the game to load... If it does not load in 10 sec, please relogin and try again.</p>
             </div>
-            <div style="text-align:center; padding:30px">
-                <h7 style="color:white;">Made by Nikita @UbiqumTeam.co</h7>
+            <div class="bottSignature">
+                <h7>Made by Nikita @UbiqumTeam.co</h7>
             </div>
         </div>
         <script src="game_play.js"></script>

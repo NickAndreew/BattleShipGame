@@ -17,21 +17,39 @@ $("#logOutButtonId").on("click", function(){
 });
 
 function logIn(emailInput, passwordInput){
-    $.post("/api/login", {
-        email: emailInput,
-        password: passwordInput
-    }).done(function() { console.log("logged in!"); window.location.href = "/web/games.html"; }).fail(function(){console.log("fail!");});
+    if(validateEmail(emailInput)){
+        $.post("/api/login", {
+            email: emailInput,
+            password: passwordInput
+        }).done(function() { console.log("logged in!"); window.location.href = "/web/games.html"; }).fail(function(){console.log("fail!");});
+    } else {
+        $("#emailInputId").val("");
+        $("#passwordInputId").val("");
+    }
 }
 
 function signUp (emailInput, passwordInput){
-    $.post("/api/createPlayer", {
-        email: emailInput,
-        password: passwordInput
-    }).done(function() { console.log("You have created a profile!"); logIn(emailInput, passwordInput); }).fail(function(){console.log("fail!")});
+    if(validateEmail(emailInput)){
+        $.post("/api/createPlayer", {
+            email: emailInput,
+            password: passwordInput
+        }).done(function(response) { console.log(response); logIn(emailInput, passwordInput); }).fail(function(response){console.log(response)});
+    } else {
+        $("#emailInputId").val("");
+        $("#passwordInputId").val("");
+    }
 }
 
 
-
+function validateEmail(inputText) {
+    var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(inputText.match(mailFormat)){
+        return true;
+    } else {
+        alert("You have entered an invalid email address!");
+        return false;
+    }
+}
 
 
 

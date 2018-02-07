@@ -29,10 +29,12 @@ public class GamePlay {
     @OneToMany(mappedBy="gamePlay", fetch = FetchType.EAGER)
     private Set<Salvo> salvos;
 
-    @OneToOne(mappedBy="player", fetch = FetchType.EAGER)
+    @OneToOne(mappedBy="gamePlay", fetch = FetchType.EAGER)
     private Score score;
 
     private String date;
+
+    private boolean type;
 
     public GamePlay(){}
 
@@ -58,7 +60,7 @@ public class GamePlay {
     }
 
     public Game getGame() {
-        return game;
+        return this.game;
     }
 
     public String getDate() {
@@ -85,9 +87,30 @@ public class GamePlay {
         return this.salvos;
     }
 
+    public boolean getType() {
+        return type;
+    }
+
+    public void setType(boolean type) {
+        this.type = type;
+    }
+
     public void addShip(Ship ship){
         ship.setGamePlay(this);
         this.ships.add(ship);
+    }
+
+    public void addSalvo(Salvo salvo){
+        salvo.setGamePlay(this);
+        this.salvos.add(salvo);
+    }
+
+    public void setScore(Score score) {
+        this.score = score;
+    }
+
+    public Score getScore(){
+        return this.score;
     }
 
     @JsonIgnore
@@ -107,20 +130,27 @@ public class GamePlay {
 
     @JsonIgnore
     public GamePlay getEnemyGamePlay(){
-        GamePlay gamePlay = new GamePlay();
+        GamePlay gamePlay = null;
         List<GamePlay> gamePlayList = this.getGame().getGamePlays()
                 .stream()
                 .collect(toList());
         for(int i=0;i<=gamePlayList.size()-1;i++){
-            if(gamePlayList.get(i)!=this){
+            if(gamePlayList.get(i).getId()!=this.getId()){
                 gamePlay = gamePlayList.get(i);
             }
         }
         return gamePlay;
     }
 
-    public Score getScore(){
-        return this.score;
+    public Integer getLastTurn(){
+        if(!this.getSalvos().isEmpty()){
+            return this.getSalvos().stream()
+                    .map(s -> s.getTurn())
+                    .max((x,y) -> Integer.compare(x,y))
+                    .get();
+        } else {
+            return 0;
+        }
     }
 
 }

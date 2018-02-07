@@ -7,6 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
           crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+
 </head>
 <body>
     <div class="container1">
@@ -25,46 +27,46 @@
                 </li>
             </ul>
         </nav>
-        <div class="gamesListDivCl">
-            <div class="createGameButtonDiv">
-                <button id="createGameButton" class="buttonCl">Create a New Game</button>
+
+
+        <div class="tablesDivCl">
+            <div class="gamesListDivCl">
+                <h3 style="text-align: center; color: white; font-size: 55px;">Active Games</h3>
+                <div class="gamesTableHead">
+                    <div class="gamesHeaderColumn1"><b>Game ID</b></div>
+                    <div class="gamesHeaderColumn2"><b>Players</b></div>
+                    <div class="gamesHeaderColumn3"><b>Action</b></div>
+                </div>
+                <div class="myTable">
+                    <table class="table-striped table-condenced leaderBoardClass" id="tableId">
+
+                    </table>
+                </div>
             </div>
-            <div class="myTable">
-                <table class="table-bordered leaderBoardClass" id="tableId">
-                    <thead>
-                        <tr>
-                            <th>Game ID</th>
-                            <th>Players</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <div class="leaderBoardDiv" id="leaderBoardDivId">
+                <h3 style="text-align: center; color: white; font-size: 55px;">Leaderboard</h3>
+                <div class="leadersTableHead">
+                    <div class="leaderHeaderColumn1"><b>Player Email</b></div>
+                    <div class="leaderHeaderColumn2"><b>Total Scores</b></div>
+                    <div class="leaderHeaderColumn3"><b>Total Games Won</b></div>
+                    <div class="leaderHeaderColumn4"><b>Total Games Tied</b></div>
+                    <div class="leaderHeaderColumn5"><b>Total Games Lost</b></div>
+                </div>
+                <div class="myTable">
+                    <table class="table-striped table-condenced leaderBoardClass" id="leaderBoardId">
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="leaderBoardDiv" id="leaderBoardDivId">
-            <h3 style="text-align: center">Leaderboard!</h3>
-            <div class="myTable">
-                <table class="table-bordered leaderboardClass">
-
-                    <thead>
-                    <th>Player Email</th>
-                    <th>Total Scores</th>
-                    <th>Total Games Won</th>
-                    <th>Total Games Tied</th>
-                    <th>Total Games Lost</th>
-                    </thead>
-                    <tbody id="leaderBoardId">
-
-                    </tbody>
-                </table>
+                    </table>
+                </div>
             </div>
         </div>
 
-        <div style="text-align:center; padding:30px">
-            <h7 style="color:white;">Made by Nikita @UbiqumTeam.co</h7>
+
+        <div class="createGameButtonDiv">
+            <button id="createGameButton" class="startNewGameButton">Start a New Game</button>
+        </div>
+
+        <div class="bottSignature">
+            <h7>Made by Nikita @UbiqumTeam.co</h7>
         </div>
     </div>
     <script src="games.js"></script>

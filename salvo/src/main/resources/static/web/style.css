@@ -1,3 +1,249 @@
+//// GENERAL CSS
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+table tr:last-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table tr:last-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+thead {
+    background-color: darkgray;
+}
+
+.container1 {
+    background-color:gray;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    width: 100%;
+    font-family: 'Dhurjati', sans-serif;
+}
+
+.navbar-text {
+    color: white;
+    font-size: 40px;
+}
+
+.myNav {
+    background-color:black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.bottSignature {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 100px;
+    padding: 50px;
+    font-family: 'Dhurjati', sans-serif;
+}
+
+.logoClass {
+    height: 50px;
+    width: 70px;
+}
+
+
+//// AUTHENTICATION.HTML
+
+.welcomeHeader{
+    font-size: 80px;
+    width: 480px;
+    margin-top: 70px;
+    margin-right: 150px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.formClass{
+    display:flex;
+    justify-content:center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.formInputCl {
+    width: 300px;
+    height: 380px;
+    padding: 35px;
+    border-radius: 5px;
+    background:rgba(1,1,1,0.5);
+    font-family: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 80px;
+    font-family: 'Anton', sans-serif;
+}
+
+.sInSUp {
+    font-size: 30px;
+    margin-left: 5px;
+    padding-bottom: 35px;
+}
+
+.inputClass {
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 227px;
+    font-size: 15px;
+    font-family: 'Pompiere', cursive;
+}
+
+.signInButton {
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 2px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.signUpButton {
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.myTable {
+    padding-bottom: 40px;
+    display:flex;
+    width: 100%;
+    justify-content:center;
+}
+
+
+//// GAMES.HTML
+
+.tablesDivCl {
+    display:flex;
+    flex-align: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.gamesListDivCl {
+    display:block;
+    width: 50%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.gamesTableHead {
+    display: flex;
+    background-color: darkgray;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 25px;
+}
+
+.gamesHeaderColumn1 {
+    width: 20%;
+    text-align: center;
+}
+
+.gamesHeaderColumn2 {
+    width: 65%;
+    text-align: center;
+}
+
+.gamesHeaderColumn3 {
+    width: 15%px;
+    text-align: center;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.leaderHeaderColumn1 {
+    width: 20%;
+    text-align: center;
+}
+
+.leaderHeaderColumn2 {
+    width: 20%;
+    text-align: center;
+}
+
+.leaderHeaderColumn3 {
+    width: 20%;
+    text-align: center;
+
+}
+
+.leaderHeaderColumn4 {
+    width: 20%;
+    text-align: center;
+
+}
+
+.leaderHeaderColumn5 {
+    width: 20%;
+    text-align: center;
+}
+
+#tableId {
+    display: flex;
+}
+
+.leaderBoardDiv {
+    display:block;
+    width: 50%;
+    margin-right: 30px;
+}
+
+.leadersTableHead {
+    display: flex;
+    background-color: darkgray;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 18px;
+}
+
+.startNewGameButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.td1 {
+    width: 20%;
+}
+
+.td2 {
+    width: 80%;
+}
+
+.td3 {
+    width: 15%;
+}
+
+//// GAME_VIEW.HTML
+
 .ship {
     border: 1px solid black;
     height: 40px;
@@ -17,17 +263,17 @@
 }
 
 .gridClass {
-    padding:5px;
+    display: block;
+    margin-left: 50px;
+}
+
+.gridClass1 {
+    display: block;
+    margin-right: 50px;
 }
 
 .paragrCl {
     padding-left: 20px;
-}
-
-.myTable {
-    padding-bottom: 100px;
-    display:flex;
-    justify-content:center;
 }
 
 .dropTarget {
@@ -35,26 +281,15 @@
     position:relative;
 }
 
-.tablesDivCl {
-    display:flex;
-    flex-align: row;
-    justify-content: space-between;
-    padding-left:5%;
-    padding-right:5%;
-}
-
 .shipsContainerClass {
     display: inline-block;
     border-radius: 5px;
-    background-color: gray;
+    background-color: transparent;
+    padding: 100px;
     height: 440px;
     width: 440px;
     min-width:441px;
     min-height:441px;
-}
-
-.table-bordered td, .table-bordered th{
-    border-color: black !important;
 }
 
 .cellClass {
@@ -66,15 +301,8 @@
     width: 40px;
     text-align:center;
     background-color: lightblue;
+    background-image: url("sea.gif");
     z-index: 0;
-}
-
-.shipClass {
-    background-color: blue;
-}
-
-.shotClass {
-    background-color: red;
 }
 
 .shipContainerClass{
@@ -82,28 +310,34 @@
     min-height: 441px;
 }
 
-.gamesListDivCl {
-    margin-left: auto;
-    margin-right: auto;
-    padding:70px;
-}
-
 .userEmailCl {
     color: white;
-    margin-left:35%;
+    margin-left:200px;
     padding-left: 10px;
 }
 
+
+#gameViewUnloadedId {
+    height: 400px;
+    width: 100%;
+    padding-top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
 .buttonCl {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
     cursor: pointer;
-    width:auto;
-    height:auto;
+    width: 100px;
+    height: 70px;
+    font-size: 30px;
     background-color: brown;
-
-}
-.container {
-    background-image:
+    color: white;
 }
 
 .draggable {
@@ -112,6 +346,14 @@
     width: 37px;
     height: 37px;
     z-index: 1;
+}
+
+.alertsDiv {
+    display: block;
+    width:100%;
+    height:60px;
+    text-align: center;
+    font-size: 35px;
 }
 
 .h_v {
@@ -130,56 +372,50 @@
     cursor: pointer;
 }
 
+.gameStateInfoCl {
+    border-radius: 5px;
+    background-color: gray;
+    width: 250px;
+    height: 115px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .gridTitleClass {
+    text-align: center;
+    color: white;
+}
+
+#stateGameOverId {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 100px;
     text-align: center;
 }
 
-.myNav {
-    background-color:black;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
 
 .titleDivCl {
-    padding-top: 100px;
-    padding-left: 60px;
     border-radius: 5px;
 }
 
 .playersTitleCl {
-
+    padding-left: 10px;
+    color: white;
 }
 
-.leaderBoardDiv {
-    padding:20px;
-}
-
-.container1 {
-    background-color:gray;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0px;
-    width: 100%;
-}
-
-.table-bordered {
-    background-color: darkcyan;
+.myGridTable {
+    background-color: gray;
     min-width: 441px;
-}
-
-
-.welcomeHeader{
-    text-align:center;
-    padding:100px;
-}
-
-.startButton {
-    text-align:center;
-    position: absolute;
-    right: 10%;
-    bottom: -10%;
-    height: 10%;
-    width: 10%;
     border-radius: 10px;
+}
+
+.gameHistoryDivCl {
+    display: block;
+    padding-top: 22px;
+    align-content: center;
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dropbtn {
@@ -196,10 +432,6 @@
 .dropdown {
     position: relative;
     display: inline-block;
-}
-
-.createGameButtonDiv {
-    padding: 50px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -236,37 +468,143 @@
     background-color: darkcyan;
 }
 
-.logoClass {
-    height: 50px;
-    width: 70px;
-}
-
-.formClass{
-    display:flex;
-    justify-content:center;
-    padding: 50px;
+.statsTablesDivCl {
+    display: flex;
+    flex-align: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .welcomeImgCl{
     display:block;
     margin-left:auto;
     margin-right:auto;
+    border-radius: 5px;
 }
+
+
+#tableId tbody {
+    display: inline-block;
+    max-height: 200px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#leaderBoardId tbody {
+    width: 100%;
+    display: inline-block;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.gameHistoryDivCl > table {
+    width: 255px;
+}
+
+
+
 
 li:hover {
     cursor: pointer;
+}
+
+td {
+    color: white;
+    text-align: center;
+}
+
+.tdLeaderBoardCl {
+    width: 140px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+th {
+    padding-right: 30px;
 }
 
 body {
     background-image: url("https://hdwallsource.com/img/2014/7/sea-water-hd-33447-34204-hd-wallpapers.jpg");
 }
 
+.allStatsDivId {
+    padding-bottom: 50px;
+}
+
+.statsCl {
+    width: 400px;
+    font-size: 25px;
+}
+
 .shotableCell {
     cursor: pointer;
 }
 
-.navbar-text {
+
+#gameOverDivId {
+    display:none;
+}
+
+#gameOverStatsId {
+    display:none;
+    padding-top: 100px;
+}
+
+.gameOverHeaderCl {
+    text-align: center;
+    padding: 50px;
     color: white;
+}
+
+.gameOverImgCl {
+    display:block;
+    padding-top: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 450px;
+    height: 350px;
+}
+
+.hitCl {
+    display: none;
+    position: relative;
+    background: transparent;
+    background-image: url('s-v.png');
+    background-size: 75px 710px;
+    background-position-x: 1px;
+    background-position-y: 40px;
+    height: 38px;
+    width: 38px;
+    z-index: 5;
+}
+
+.missCl {
+    display: none;
+    position:relative;
+    background: transparent;
+    background-image: url('s-v.png');
+    background-size: 75px 710px;
+    background-position-x: 38px;
+    background-position-y: 40px;
+    height: 38px;
+    width: 38px;
+    z-index: 5;
+}
+
+.sightCl {
+    display: none;
+    position: relative;
+    background-image: url('target-sight.jpg');
+    height: 37px;
+    width: 37px;
+    z-index: 5;
+    background-size: cover;
 }
 
 .carrier {
@@ -277,6 +615,18 @@ body {
     background-position-y: 38px;
     width: 200px;
     height: 39px;
+    overflow: hidden;
+}
+
+.carrier1 {
+    display:inline-block;
+    background-image: url('s-h.png');
+    background-size: 500px 50px;
+    background-position-x: -0px;
+    background-position-y: 25px;
+    width: 140px;
+    height: 25px;
+    margin-top: 5px;
     overflow: hidden;
 }
 
@@ -291,6 +641,18 @@ body {
     overflow: hidden;
 }
 
+.battleship1 {
+    display:inline-block;
+    background-image: url('s-h.png');
+    background-size: 500px 50px;
+    background-position-x: -144px;
+    background-position-y: 27px;
+    width: 105px;
+    height: 25px;
+    overflow: hidden;
+}
+
+
 .submarine {
     display:inline-block;
     background-image: url('s-h.png');
@@ -299,6 +661,17 @@ body {
     background-position-y: 37px;
     width: 120px;
     height: 40px;
+    overflow: hidden;
+}
+
+.submarine1 {
+    display:inline-block;
+    background-image: url('s-h.png');
+    background-size: 500px 50px;
+    background-position-x: -253px;
+    background-position-y: 28px;
+    width: 78px;
+    height: 25px;
     overflow: hidden;
 }
 
@@ -313,7 +686,18 @@ body {
     overflow: hidden;
 }
 
-.patrol_boat{
+.destroyer1 {
+    display:inline-block;
+    background-image: url('s-h.png');
+    background-size: 500px 50px;
+    background-position-x: -336px;
+    background-position-y: 28px;
+    width: 78px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.patrol_boat {
     display:inline-block;
     background-image: url('s-h.png');
     background-size: 710px 75px;
@@ -323,3 +707,15 @@ body {
     height: 40px;
     overflow: hidden;
 }
+
+.patrol_boat1 {
+    display:inline-block;
+    background-image: url('s-h.png');
+    background-size: 500px 50px;
+    background-position-x: -415px;
+    background-position-y: 25px;
+    width: 60px;
+    height: 25px;
+    overflow: hidden;
+}
+

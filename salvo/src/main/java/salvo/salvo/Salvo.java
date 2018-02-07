@@ -19,9 +19,9 @@ public class Salvo {
     @ElementCollection
     private List<String> locations;
 
-    private long turn;
+    private int turn;
 
-    public Salvo (List<String> locations, long turn) {
+    public Salvo (List<String> locations, int turn) {
         this.locations = locations;
         this.turn = turn;
     }
@@ -54,11 +54,11 @@ public class Salvo {
         this.locations = locations;
     }
 
-    public long getTurn() {
+    public int getTurn() {
         return turn;
     }
 
-    public void setTurn(long turn) {
+    public void setTurn(int turn) {
         this.turn = turn;
     }
 }
