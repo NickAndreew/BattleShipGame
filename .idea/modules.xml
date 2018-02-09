@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Salvo.iml" filepath="$PROJECT_DIR$/Salvo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Salvo.iml" filepath="$PROJECT_DIR$/.idea/modules/Salvo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Salvo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Salvo_main.iml" group="Salvo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Salvo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Salvo_test.iml" group="Salvo" />
     </modules>
   </component>
 </project>

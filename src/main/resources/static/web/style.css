@@ -1,4 +1,4 @@
-//// GENERAL CSS
+/* GENERAL CSS */
 
 table tr:last-child td:first-child {
     border-bottom-left-radius: 10px;
@@ -28,6 +28,7 @@ thead {
     font-family: 'Dhurjati', sans-serif;
 }
 
+
 .navbar-text {
     color: white;
     font-size: 40px;
@@ -54,31 +55,38 @@ thead {
 }
 
 
-//// AUTHENTICATION.HTML
+/* AUTHENTICATION.HTML */
 
-.welcomeHeader{
+
+.welcomeHeader {
+    display: block;
     font-size: 80px;
-    width: 480px;
+    width: 50%;
     margin-top: 70px;
     margin-right: 150px;
+    padding-left: 5%;
     color: white;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Dhurjati', sans-serif;
 }
 
 .formClass{
     display:flex;
-    justify-content:center;
+    flex-align: row;
+    justify-content:space-between;
     padding-top: 50px;
     padding-bottom: 30px;
+    width: 100%;
+    padding-right: 5%;
 }
 
 .formInputCl {
+    display: block;
+    align-self: right;
     width: 300px;
     height: 380px;
     padding: 35px;
     border-radius: 5px;
     background:rgba(1,1,1,0.5);
-    font-family: none;
     color: white;
     font-size: 15px;
     margin-top: 80px;
@@ -124,14 +132,20 @@ thead {
 }
 
 
-//// GAMES.HTML
+/* GAMES.HTML */
 
 .tablesDivCl {
-    display:flex;
-    flex-align: row;
     justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+.tablesDivCl {
+    justify-content: space-between;
+    display:flex;
+    flex-align: row;
+    margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 .gamesListDivCl {
@@ -230,19 +244,8 @@ thead {
     cursor: pointer;
 }
 
-.td1 {
-    width: 20%;
-}
 
-.td2 {
-    width: 80%;
-}
-
-.td3 {
-    width: 15%;
-}
-
-//// GAME_VIEW.HTML
+/* GAME_VIEW.HTML */
 
 .ship {
     border: 1px solid black;
@@ -265,6 +268,18 @@ thead {
 .gridClass {
     display: block;
     margin-left: 50px;
+}
+
+.td1 {
+    width: 20%;
+}
+
+.td2 {
+    width: 80%;
+}
+
+.td3 {
+    width: 15%;
 }
 
 .gridClass1 {
@@ -301,7 +316,7 @@ thead {
     width: 40px;
     text-align:center;
     background-color: lightblue;
-    background-image: url("sea.gif");
+    background-image: url("/sea.gif");
     z-index: 0;
 }
 
@@ -500,14 +515,9 @@ thead {
     overflow-x: hidden;
 }
 
-
-
 .gameHistoryDivCl > table {
     width: 255px;
 }
-
-
-
 
 li:hover {
     cursor: pointer;
@@ -523,7 +533,6 @@ td {
     font-size: 18px;
     text-align: center;
 }
-
 
 th {
     padding-right: 30px;
@@ -545,7 +554,6 @@ body {
 .shotableCell {
     cursor: pointer;
 }
-
 
 #gameOverDivId {
     display:none;
@@ -575,7 +583,7 @@ body {
     display: none;
     position: relative;
     background: transparent;
-    background-image: url('s-v.png');
+    background-image: url('/s-v.png');
     background-size: 75px 710px;
     background-position-x: 1px;
     background-position-y: 40px;
@@ -588,7 +596,7 @@ body {
     display: none;
     position:relative;
     background: transparent;
-    background-image: url('s-v.png');
+    background-image: url('/s-v.png');
     background-size: 75px 710px;
     background-position-x: 38px;
     background-position-y: 40px;
@@ -600,7 +608,7 @@ body {
 .sightCl {
     display: none;
     position: relative;
-    background-image: url('target-sight.jpg');
+    background-image: url('/target-sight.png');
     height: 37px;
     width: 37px;
     z-index: 5;
@@ -609,7 +617,7 @@ body {
 
 .carrier {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 710px 75px;
     background-position-x: -0px;
     background-position-y: 38px;
@@ -620,7 +628,7 @@ body {
 
 .carrier1 {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 500px 50px;
     background-position-x: -0px;
     background-position-y: 25px;
@@ -632,7 +640,7 @@ body {
 
 .battleship {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 710px 75px;
     background-position-x: -200px;
     background-position-y: 37px;
@@ -643,7 +651,7 @@ body {
 
 .battleship1 {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 500px 50px;
     background-position-x: -144px;
     background-position-y: 27px;
@@ -655,7 +663,7 @@ body {
 
 .submarine {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 710px 75px;
     background-position-x: -355px;
     background-position-y: 37px;
@@ -666,7 +674,7 @@ body {
 
 .submarine1 {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 500px 50px;
     background-position-x: -253px;
     background-position-y: 28px;
@@ -677,7 +685,7 @@ body {
 
 .destroyer {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 710px 75px;
     background-position-x: -475px;
     background-position-y: 37px;
@@ -688,7 +696,7 @@ body {
 
 .destroyer1 {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 500px 50px;
     background-position-x: -336px;
     background-position-y: 28px;
@@ -699,7 +707,7 @@ body {
 
 .patrol_boat {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 710px 75px;
     background-position-x: -590px;
     background-position-y: 37px;
@@ -710,7 +718,7 @@ body {
 
 .patrol_boat1 {
     display:inline-block;
-    background-image: url('s-h.png');
+    background-image: url('/s-h.png');
     background-size: 500px 50px;
     background-position-x: -415px;
     background-position-y: 25px;

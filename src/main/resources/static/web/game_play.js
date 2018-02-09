@@ -218,12 +218,12 @@ function loadMainJsonAndMethods(){
                                     //verical
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop1"));
                                     $("#drop1").attr("draggable", "false");
-                                    $(".carrier").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "0px", "height": "200px", "width": "39px", "overflow": "hidden"});
+                                    $(".carrier").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "0px", "height": "200px", "width": "39px", "overflow": "hidden"});
                                 } else if(data.ships[i].location[j].split("")[1]==data.ships[i].location[j+1].split("")[1]){
                                     //horizontal
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop1"));
                                     $("#drop1").attr("draggable", "false");
-                                    $(".carrier").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-0px", "background-position-y": "38px", "width": "200px", "height": "39px", "overflow": "hidden"});
+                                    $(".carrier").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-0px", "background-position-y": "38px", "width": "200px", "height": "39px", "overflow": "hidden"});
                                 }
 
                             }
@@ -235,12 +235,12 @@ function loadMainJsonAndMethods(){
                                     //verical
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop2"));
                                     $("#drop2").attr("draggable", "false");
-                                    $(".battleship").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "-200px", "height": "160px", "width": "39px", "overflow": "hidden"});
+                                    $(".battleship").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "-200px", "height": "160px", "width": "39px", "overflow": "hidden"});
                                 } else if(data.ships[i].location[j].split("")[1]==data.ships[i].location[j+1].split("")[1]){
                                     //horizontal
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop2"));
                                     $("#drop2").attr("draggable", "false");
-                                    $(".battleship").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-200px", "background-position-y": "37px", "width": "160px", "height": "39px", "overflow": "hidden"});
+                                    $(".battleship").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-200px", "background-position-y": "37px", "width": "160px", "height": "39px", "overflow": "hidden"});
                                 }
 
                             }
@@ -252,12 +252,12 @@ function loadMainJsonAndMethods(){
                                     //verical
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop3"));
                                     $("#drop3").attr("draggable", "false");
-                                    $(".submarine").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-355px", "height": "120px", "width": "39px", "overflow": "hidden"});
+                                    $(".submarine").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-355px", "height": "120px", "width": "39px", "overflow": "hidden"});
                                 } else if(data.ships[i].location[j].split("")[1]==data.ships[i].location[j+1].split("")[1]){
                                     //horizontal
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop3"));
                                     $("#drop3").attr("draggable", "false");
-                                    $(".submarine").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-355px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
+                                    $(".submarine").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-355px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
                                 }
 
                             }
@@ -269,12 +269,12 @@ function loadMainJsonAndMethods(){
                                     //verical
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop4"));
                                     $("#drop4").attr("draggable", "false");
-                                    $(".destroyer").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-472px", "height": "120px", "width": "39px", "overflow": "hidden"});
+                                    $(".destroyer").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-472px", "height": "120px", "width": "39px", "overflow": "hidden"});
                                 } else if(data.ships[i].location[j].split("")[1]==data.ships[i].location[j+1].split("")[1]){
                                     //horizontal
                                     $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop4"));
                                     $("#drop4").attr("draggable", "false");
-                                    $(".destroyer").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-475px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
+                                    $(".destroyer").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-475px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
                                 }
 
                             }
@@ -285,12 +285,12 @@ function loadMainJsonAndMethods(){
                                 //verical
                                 $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop5"));
                                 $("#drop5").attr("draggable", "false");
-                                $(".patrol_boat").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-590px", "height": "80px", "width": "39px", "overflow": "hidden"});
+                                $(".patrol_boat").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-590px", "height": "80px", "width": "39px", "overflow": "hidden"});
                             } else if(data.ships[i].location[0].split("")[1]==data.ships[i].location[1].split("")[1]){
                                 //horizontal
                                 $("#yourTableId").find("[data-location="+data.ships[i].location[0]+"]").append($("#drop5"));
                                 $("#drop5").attr("draggable", "false");
-                                $(".patrol_boat").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-590px", "background-position-y": "37px", "width": "80px", "height": "39px", "overflow": "hidden"});
+                                $(".patrol_boat").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-590px", "background-position-y": "37px", "width": "80px", "height": "39px", "overflow": "hidden"});
                             }
                         }
                     }
@@ -355,35 +355,35 @@ function loadMainJsonAndMethods(){
                                     $("#carrierShotsId").append("*");
                                 } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#carrierShotsId").text("SUNKED!");
-                                    $("#carrierPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "0px", "background-position-y": "0px", "width": "140px", "height": "25px", "overflow": "hidden"})
+                                    $("#carrierPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "0px", "background-position-y": "0px", "width": "140px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="BATTLESHIP"){
                                 if(data.your_salvos[i].shots[j].condition=="damaged"){
                                     $("#battleshipShotsId").append("*");
                                 } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#battleshipShotsId").text("SUNKED!");
-                                    $("#battleshipPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "-142px", "background-position-y": "2px", "width": "105px", "height": "25px", "overflow": "hidden"})
+                                    $("#battleshipPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-142px", "background-position-y": "2px", "width": "105px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="SUBMARINE"){
                                 if(data.your_salvos[i].shots[j].condition=="damaged"){
                                     $("#submarineShotsId").append("*");
                                 } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#submarineShotsId").text("SUNKED!");
-                                    $("#submarinePicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "248px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
+                                    $("#submarinePicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "248px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="DESTROYER"){
                                 if(data.your_salvos[i].shots[j].condition=="damaged"){
                                     $("#destroyerShotsId").append("*");
                                 } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#destroyerShotsId").text("SUNKED!");
-                                    $("#destroyerPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "164px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
+                                    $("#destroyerPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "164px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="PATROL_BOAT"){
                                 if(data.your_salvos[i].shots[j].condition=="damaged"){
                                     $("#patrol_boatShotsId").append("*");
                                 } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#patrol_boatShotsId").text("SUNKED!");
-                                    $("#patrol_boatPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "-412px", "background-position-y": "2px", "width": "60px", "height": "25px", "overflow": "hidden"})
+                                    $("#patrol_boatPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-412px", "background-position-y": "2px", "width": "60px", "height": "25px", "overflow": "hidden"})
                                 }
                             }
                         }
@@ -631,11 +631,11 @@ $("#putShipsButtonId").click(function(){
 $("#carrier_rotate").click(function(){
     if ($(".carrier").attr("data-align") == "horizontal"){
         console.log("button was clicked");
-        $(".carrier").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "0px", "height": "200px", "width": "39px", "overflow": "hidden"});
+        $(".carrier").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "0px", "height": "200px", "width": "39px", "overflow": "hidden"});
         $(".carrier").attr("data-align", "vertical");
     } else if ($(".carrier").attr("data-align") == "vertical"){
         console.log("button was clicked");
-        $(".carrier").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-0px", "background-position-y": "38px", "width": "200px", "height": "39px", "overflow": "hidden"});
+        $(".carrier").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-0px", "background-position-y": "38px", "width": "200px", "height": "39px", "overflow": "hidden"});
         $(".carrier").attr("data-align", "horizontal");
     }
 });
@@ -643,11 +643,11 @@ $("#carrier_rotate").click(function(){
 $("#battleship_rotate").click(function(){
     if ($(".battleship").attr("data-align") == "horizontal"){
         console.log("button was clicked");
-        $(".battleship").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "-200px", "height": "160px", "width": "39px", "overflow": "hidden"});
+        $(".battleship").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "0px", "background-position-y": "-200px", "height": "160px", "width": "39px", "overflow": "hidden"});
         $(".battleship").attr("data-align", "vertical");
     } else if ($(".battleship").attr("data-align") == "vertical"){
         console.log("button was clicked");
-        $(".battleship").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-200px", "background-position-y": "37px", "width": "160px", "height": "39px", "overflow": "hidden"});
+        $(".battleship").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-200px", "background-position-y": "37px", "width": "160px", "height": "39px", "overflow": "hidden"});
         $(".battleship").attr("data-align", "horizontal");
     }
 });
@@ -655,11 +655,11 @@ $("#battleship_rotate").click(function(){
 $("#submarine_rotate").click(function(){
     if ($(".submarine").attr("data-align") == "horizontal"){
         console.log("button was clicked");
-        $(".submarine").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-355px", "height": "120px", "width": "39px", "overflow": "hidden"});
+        $(".submarine").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-355px", "height": "120px", "width": "39px", "overflow": "hidden"});
         $(".submarine").attr("data-align", "vertical");
     } else if ($(".submarine").attr("data-align") == "vertical"){
         console.log("button was clicked");
-        $(".submarine").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-355px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
+        $(".submarine").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-355px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
         $(".submarine").attr("data-align", "horizontal");
     }
 });
@@ -667,11 +667,11 @@ $("#submarine_rotate").click(function(){
 $("#destroyer_rotate").click(function(){
     if ($(".destroyer").attr("data-align") == "horizontal"){
         console.log("button was clicked");
-        $(".destroyer").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-472px", "height": "120px", "width": "39px", "overflow": "hidden"});
+        $(".destroyer").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-472px", "height": "120px", "width": "39px", "overflow": "hidden"});
         $(".destroyer").attr("data-align", "vertical");
     } else if ($(".destroyer").attr("data-align") == "vertical"){
         console.log("button was clicked");
-        $(".destroyer").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-475px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
+        $(".destroyer").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-475px", "background-position-y": "37px", "width": "120px", "height": "39px", "overflow": "hidden"});
         $(".destroyer").attr("data-align", "horizontal");
     }
 });
@@ -679,11 +679,11 @@ $("#destroyer_rotate").click(function(){
 $("#patrol_boat_rotate").click(function(){
     if ($(".patrol_boat").attr("data-align") == "horizontal"){
         console.log("button was clicked");
-        $(".patrol_boat").css({"background-image": "url('s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-590px", "height": "80px", "width": "39px", "overflow": "hidden"});
+        $(".patrol_boat").css({"background-image": "url('/s-v.png')", "background-size": "75px 710px", "background-position-x": "1px", "background-position-y": "-590px", "height": "80px", "width": "39px", "overflow": "hidden"});
         $(".patrol_boat").attr("data-align", "vertical");
     } else if ($(".patrol_boat").attr("data-align") == "vertical"){
         console.log("button was clicked");
-        $(".patrol_boat").css({"background-image": "url('s-h.png')", "background-size": "710px 75px", "background-position-x": "-590px", "background-position-y": "37px", "width": "80px", "height": "39px", "overflow": "hidden"});
+        $(".patrol_boat").css({"background-image": "url('/s-h.png')", "background-size": "710px 75px", "background-position-x": "-590px", "background-position-y": "37px", "width": "80px", "height": "39px", "overflow": "hidden"});
         $(".patrol_boat").attr("data-align", "horizontal");
     }
 });
@@ -863,7 +863,7 @@ function makeShot(locationValue){
     if(count < 5){ // MAXIMUM NUMBER OF SHOTS = '5', MIGHT BE BETTER TO HAVE LIMIT OF '3' SHOTS .....
         if ($("#enemiesTableId").find("[data-location="+locationValue+"]").css("background-color") == "rgb(173, 216, 230)" && !$("#enemiesTableId").find("[data-location="+locationValue+"]").attr("data-shot") && $("#enemiesTableId").find("[data-location="+locationValue+"]").find(".hitCl").css("display")!="block" && $("#enemiesTableId").find("[data-location="+locationValue+"]").find(".missCl").css("display")!="block" && $("#enemiesTableId").find("[data-location="+locationValue+"]").attr("clickable") == "true"){  // if cell is 'lightblue'
             $("#enemiesTableId").find("[data-location="+locationValue+"]").find(".sightCl").css("display", "block");
-            $("#enemiesTableId").find("[data-location="+locationValue+"]").attr("src", "target-sight.jpg");
+            $("#enemiesTableId").find("[data-location="+locationValue+"]").attr("src", "/target-sight.jpg");
             $("#enemiesTableId").find("[data-location="+locationValue+"]").attr("data-shot", "shot");
             count++;
 
@@ -943,35 +943,35 @@ $("#makeShotsButtonID").click(function(){
                                         $("#carrierShotsId").append("*");
                                     } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#carrierShotsId").text("SUNKED!");
-                                        $("#carrierPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "0px", "background-position-y": "0px", "width": "140px", "height": "25px", "overflow": "hidden"})
+                                        $("#carrierPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "0px", "background-position-y": "0px", "width": "140px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="BATTLESHIP"){
                                     if(data.your_salvos[i].shots[j].condition=="damaged"){
                                         $("#battleshipShotsId").append("*");
                                     } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#battleshipShotsId").text("SUNKED!");
-                                        $("#battleshipPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "-142px", "background-position-y": "2px", "width": "105px", "height": "25px", "overflow": "hidden"})
+                                        $("#battleshipPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-142px", "background-position-y": "2px", "width": "105px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="SUBMARINE"){
                                     if(data.your_salvos[i].shots[j].condition=="damaged"){
                                         $("#submarineShotsId").append("*");
                                     } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#submarineShotsId").text("SUNKED!");
-                                        $("#submarinePicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "248px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
+                                        $("#submarinePicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "248px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="DESTROYER"){
                                     if(data.your_salvos[i].shots[j].condition=="damaged"){
                                         $("#destroyerShotsId").append("*");
                                     } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#destroyerShotsId").text("SUNKED!");
-                                        $("#destroyerPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "164px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
+                                        $("#destroyerPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "164px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="PATROL_BOAT"){
                                     if(data.your_salvos[i].shots[j].condition=="damaged"){
                                         $("#patrol_boatShotsId").append("*");
                                     } else if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#patrol_boatShotsId").text("SUNKED!");
-                                        $("#patrol_boatPicId").css({"background-image": "url('s-h.png')", "background-size": "500px 50px", "background-position-x": "-412px", "background-position-y": "2px", "width": "60px", "height": "25px", "overflow": "hidden"})
+                                        $("#patrol_boatPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-412px", "background-position-y": "2px", "width": "60px", "height": "25px", "overflow": "hidden"})
                                     }
                                 }
                             }
