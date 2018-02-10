@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5901d5e7-4248-4907-af49-7af492ede203" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/rotate-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/s-h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/s-v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/sea.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/target-sight.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Salvo.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/Game.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/Game.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/GamePlay.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/GamePlay.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/GamePlayRepository.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/GamePlayRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/GameRepository.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/GameRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/GameRestController.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/Player.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/PlayerRepository.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/PlayerRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/Salvo.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/Salvo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/SalvoApplication.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/SalvoApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/SalvoRepository.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/SalvoRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/Score.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/Score.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/ScoreRepository.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/ScoreRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/Ship.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/Ship.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/java/salvo/salvo/ShipsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/salvo/salvo/ShipsRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/authentication.html" afterPath="$PROJECT_DIR$/src/main/resources/static/web/authentication.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/authentication.js" afterPath="$PROJECT_DIR$/src/main/resources/static/web/authentication.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/game_play.html" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game_play.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/game_play.js" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game_play.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/games.html" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/games.js" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/main/resources/static/web/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/web/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/salvo/src/test/java/salvo/salvo/SalvoApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/salvo/salvo/SalvoApplicationTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -103,7 +64,7 @@
       <file leaf-file-name="GameRestController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="17">
               <caret line="105" column="86" lean-forward="false" selection-start-line="105" selection-start-column="86" selection-end-line="105" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -793,6 +754,7 @@
     <property name="ToolWindowTODO.ShowToolbar" value="false" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -952,14 +914,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21674877" sideWeight="0.5060514" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21674877" sideWeight="0.5060514" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27914613" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1428,7 +1389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="17">
           <caret line="105" column="86" lean-forward="false" selection-start-line="105" selection-start-column="86" selection-end-line="105" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
