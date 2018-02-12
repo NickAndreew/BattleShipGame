@@ -79,11 +79,11 @@ public class Player {
         return score;
     }
 
-    public int scoresTotal(){
+    public double scoresTotal(){
         List<Score> allScores = scores.stream().collect(toList());
-        int total = 0;
+        double total = 0;
         for(int i = 0; i<=allScores.size()-1 ;i++){
-            total++;
+            total += allScores.get(i).getScore();
         }
         return total;
     }
