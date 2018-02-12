@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5901d5e7-4248-4907-af49-7af492ede203" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/web/game_play.html" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game_play.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/web/games.html" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/web/game_play.js" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game_play.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/web/games.js" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -65,49 +62,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameRestController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameRestController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1518430551331" expanded="true" signature="2008:2186" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="2340:2906" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="3056:3622" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="3811:4784" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="5014:5758" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="5982:10716" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="10829:12299" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="12352:12927" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="12981:13590" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="13666:13934" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="14089:14383" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="14465:14757" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="14834:14996" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="15069:15229" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="15308:15521" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="15595:19130" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="19193:19469" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="19325:19435" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="19525:19858" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="19935:20264" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="20037:20229" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="20335:20502" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="20543:20776" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="20828:21169" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="21237:21600" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="21658:21813" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="21876:22044" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="22099:22378" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="22456:22619" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="22701:22869" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="22937:25455" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="25527:26367" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="26424:26677" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="26740:26915" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="26980:27199" ph="{...}" />
-                <marker date="1518430551331" expanded="true" signature="27257:27553" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -153,17 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalvoApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/salvo/salvo/SalvoApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="48" column="75" lean-forward="false" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="games.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -237,8 +188,18 @@
       <file leaf-file-name="game_play.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game_play.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+            <state relative-caret-position="-4514">
+              <caret line="110" column="44" lean-forward="false" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="games.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="148" column="12" lean-forward="false" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -753,14 +714,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/web/authentication.html" />
         <option value="$PROJECT_DIR$/src/main/java/salvo/salvo/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/salvo/salvo/GamePlay.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/games.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/game_play.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/web/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/salvo/salvo/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/salvo/salvo/Score.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/web/games.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/web/game_play.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/web/game_play.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/web/games.js" />
       </list>
     </option>
   </component>
@@ -815,6 +776,21 @@
               <item name="Salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="salvo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salvo" type="b2602c69:ProjectViewProjectNode" />
@@ -1422,13 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2975">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1519,60 +1488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1518430551331" expanded="true" signature="2008:2186" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="2340:2906" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="3056:3622" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="3811:4784" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="5014:5758" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="5982:10716" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="10829:12299" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="12352:12927" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="12981:13590" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="13666:13934" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="14089:14383" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="14465:14757" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="14834:14996" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="15069:15229" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="15308:15521" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="15595:19130" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="19193:19469" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="19325:19435" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="19525:19858" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="19935:20264" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="20037:20229" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="20335:20502" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="20543:20776" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="20828:21169" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="21237:21600" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="21658:21813" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="21876:22044" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="22099:22378" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="22456:22619" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="22701:22869" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="22937:25455" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="25527:26367" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="26424:26677" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="26740:26915" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="26980:27199" ph="{...}" />
-            <marker date="1518430551331" expanded="true" signature="27257:27553" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game_play.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/authentication.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1598,6 +1513,32 @@
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game_play.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4514">
+          <caret line="110" column="44" lean-forward="false" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="148" column="12" lean-forward="false" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/salvo/salvo/GameRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

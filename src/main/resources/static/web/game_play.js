@@ -108,7 +108,7 @@ function loadMainJsonAndMethods(){
             }
 
             function createListOfPlayerSalvoes(){
-                for(var i = 0; i <=data.your_salvos.length-1 ;i++){
+                for(var i = 0; i <= data.your_salvos.length-1 ;i++){
                     $("#salvoesLocationListId").append($("<p>").text("Player: "+data.your_salvos[i].player.email+" on the turn "+data.your_salvos[i].turn+", made a shot on: "+data.your_salvos[i].location).attr("class", "paragrCl"));
                 }
             }
@@ -403,7 +403,7 @@ function reloadMainJson(){
     var state;
     var type;
     var locationBrowser = window.location.search.split("?gp=")[1];
-    $.getJSON("/api/game_view/"+locationBrowser, function(data){
+    $.getJSON("https://vast-waters-37875.herokuapp.com/api/game_view/"+locationBrowser, function(data){
         if (data.game_id!="") {
 
             enemyEmail = data.enemy;
