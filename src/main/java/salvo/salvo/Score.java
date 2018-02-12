@@ -1,7 +1,5 @@
 package salvo.salvo;
 
-import javafx.stage.Screen;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;

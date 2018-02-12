@@ -45,17 +45,22 @@ public class GameRestController {
     @RequestMapping("/games")
     private Map<String, Object> getGames(Authentication authentication) {
         Map<String, Object> dto = new HashMap<>();
-        List<Object> gamesList = gameRepository.findAll()
-                .stream()
-                .map(game -> (getGameMap(game)))
-                .collect(toList());
-        if (findPlayerByEmail(authentication.getName()) == null) {
+        if(authentication!=null){
+            List<Object> gamesList = gameRepository.findAll()
+                    .stream()
+                    .map(game -> (getGameMap(game)))
+                    .collect(toList());
+            if (findPlayerByEmail(authentication.getName()) == null) {
+                dto.put("player", "");
+            } else if (findPlayerByEmail(authentication.getName()) != null) {
+                dto.put("player", getMapOfPlayer(findPlayerByEmail(authentication.getName())));
+            }
+            dto.put("games", gamesList);
+            return dto;
+        } else {
             dto.put("player", "");
-        } else if (findPlayerByEmail(authentication.getName()) != null) {
-            dto.put("player", getMapOfPlayer(findPlayerByEmail(authentication.getName())));
+            return dto;
         }
-        dto.put("games", gamesList);
-        return dto;
     }
 
     @RequestMapping("/gamePlays")
