@@ -28,6 +28,9 @@ thead {
     font-family: 'Dhurjati', sans-serif;
 }
 
+.buttonTablCl {
+    cursor: pointer;
+}
 
 .navbar-text {
     color: white;

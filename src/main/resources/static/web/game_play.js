@@ -351,38 +351,23 @@ function loadMainJsonAndMethods(){
                     for(var j = 0 ; j <= data.your_salvos[i].shots.length-1 ; j++){
                         if(data.your_salvos[i].shots[j].shot=="hit"){
                             if(data.your_salvos[i].shots[j].ship=="CARRIER"){
-                                if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                    $("#carrierShotsId").append("*");
-                                } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                    $("#carrierShotsId").text("SUNKED!");
+                                if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#carrierPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "0px", "background-position-y": "0px", "width": "140px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="BATTLESHIP"){
-                                if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                    $("#battleshipShotsId").append("*");
-                                } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                    $("#battleshipShotsId").text("SUNKED!");
+                                if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#battleshipPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-142px", "background-position-y": "2px", "width": "105px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="SUBMARINE"){
-                                if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                    $("#submarineShotsId").append("*");
-                                } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                    $("#submarineShotsId").text("SUNKED!");
+                                if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#submarinePicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "248px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="DESTROYER"){
-                                if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                    $("#destroyerShotsId").append("*");
-                                } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                    $("#destroyerShotsId").text("SUNKED!");
+                                if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#destroyerPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "164px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                 }
                             } else if(data.your_salvos[i].shots[j].ship=="PATROL_BOAT"){
-                                if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                    $("#patrol_boatShotsId").append("*");
-                                } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                    $("#patrol_boatShotsId").text("SUNKED!");
+                                if(data.your_salvos[i].shots[j].condition=="sunked"){
                                     $("#patrol_boatPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-412px", "background-position-y": "2px", "width": "60px", "height": "25px", "overflow": "hidden"})
                                 }
                             }
@@ -939,38 +924,23 @@ $("#makeShotsButtonID").click(function(){
                         for(var j = 0 ; j <= data.your_salvos[i].shots.length-1 ; j++){
                             if(data.your_salvos[i].shots[j].shot=="hit"){
                                 if(data.your_salvos[i].shots[j].ship=="CARRIER"){
-                                    if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                        $("#carrierShotsId").append("*");
-                                    } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                        $("#carrierShotsId").text("SUNKED!");
+                                    if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#carrierPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "0px", "background-position-y": "0px", "width": "140px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="BATTLESHIP"){
-                                    if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                        $("#battleshipShotsId").append("*");
-                                    } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                        $("#battleshipShotsId").text("SUNKED!");
+                                    if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#battleshipPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-142px", "background-position-y": "2px", "width": "105px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="SUBMARINE"){
-                                    if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                        $("#submarineShotsId").append("*");
-                                    } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                        $("#submarineShotsId").text("SUNKED!");
+                                    if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#submarinePicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "248px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="DESTROYER"){
-                                    if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                        $("#destroyerShotsId").append("*");
-                                    } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                        $("#destroyerShotsId").text("SUNKED!");
+                                    if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#destroyerPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "164px", "background-position-y": "2px", "width": "78px", "height": "25px", "overflow": "hidden"})
                                     }
                                 } else if(data.your_salvos[i].shots[j].ship=="PATROL_BOAT"){
-                                    if(data.your_salvos[i].shots[j].condition=="damaged"){
-                                        $("#patrol_boatShotsId").append("*");
-                                    } else if(data.your_salvos[i].shots[j].condition=="sunked"){
-                                        $("#patrol_boatShotsId").text("SUNKED!");
+                                    if(data.your_salvos[i].shots[j].condition=="sunked"){
                                         $("#patrol_boatPicId").css({"background-image": "url('/s-h.png')", "background-size": "500px 50px", "background-position-x": "-412px", "background-position-y": "2px", "width": "60px", "height": "25px", "overflow": "hidden"})
                                     }
                                 }
