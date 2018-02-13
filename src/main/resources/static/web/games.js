@@ -24,7 +24,7 @@ window.setInterval(function(){
             console.log("Games List updated!");
         }
     });
-    $.getJSON("http://localhost:8080/api/leaderboard/", function (data){
+    $.getJSON("/api/leaderboard/", function (data){
         if(counter1!=data.length){
             createLeaderBoard();
             console.log("Leader Board updated!");
