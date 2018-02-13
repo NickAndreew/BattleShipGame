@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class WebController {
 
     public String index(){
-        return "redirect:/web/authentication.html";
+        return "https://vast-waters-37875.herokuapp.com/web/authentication.html";
     }
 
 }
