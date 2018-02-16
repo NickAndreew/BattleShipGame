@@ -35,6 +35,7 @@ thead {
 .navbar-text {
     color: white;
     font-size: 40px;
+    font-family: 'Anton', sans-serif;
 }
 
 .myNav {
@@ -69,7 +70,7 @@ thead {
     margin-right: 150px;
     padding-left: 5%;
     color: white;
-    font-family: 'Dhurjati', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 .formClass{
@@ -93,6 +94,7 @@ thead {
     color: white;
     font-size: 15px;
     margin-top: 80px;
+    margin-right: 10%;
     font-family: 'Anton', sans-serif;
 }
 
