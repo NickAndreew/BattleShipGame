@@ -159,6 +159,10 @@ thead {
     margin-left: 30px;
 }
 
+.createGameButtonDiv {
+    margin-bottom: 70px;
+}
+
 .gamesTableHead {
     display: flex;
     background-color: darkgray;
