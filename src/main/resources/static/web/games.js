@@ -149,19 +149,19 @@ function joinGame(gameID){
     $.post("/api/games/" + gameID + "/players").done(function(response) {
         var ID = response;
         console.log("you have joined the game!");
-        window.location.href = "https://vast-waters-37875.herokuapp.com/web/game_play.html?gp="+response;
+        window.location.href = "/web/game_play.html?gp="+response;
     }).fail(function(){console.log("fail!");});
 }
 
 function continueGame(gamePlay_id){
-    window.location.href = "https://vast-waters-37875.herokuapp.com/web/game_play.html?gp="+gamePlay_id;
+    window.location.href = "/web/game_play.html?gp="+gamePlay_id;
 }
 
 function createLeaderBoard(){
     $("#leaderBoardId").find("tbody").remove();
     var tbody = document.createElement("tbody");
 
-    $.getJSON( "https://vast-waters-37875.herokuapp.com/api/leaderboard/", function (data){
+    $.getJSON("/api/leaderboard/", function (data){
 
         counter1 = data.length;
 

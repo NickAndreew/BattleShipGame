@@ -7,6 +7,23 @@ $("#gameViewUnloadedId").hide();
 $("#alertMessage").text("");
 
 
+$(".button").on("click", function(){
+    $("#alertBox").css("display", "block");
+    $("#cover").css("display", "block");
+});
+
+$(".cancel").on("click", function(){
+    $("#alertBox").css("display", "none");
+    $("#cover").css("display", "none");
+    $("#alertMessage").text("");
+});
+
+
+
+
+
+
+
 //// HANDLES LOG OUT: .....
 $("#logOutButtonId").click(function(){
     $.post("/api/logout").done(function() { console.log("logged out"); window.location.href = "/web/authentication.html";});
@@ -61,6 +78,13 @@ function loadMainJsonAndMethods(){
             var countYrShpsSunked = 0;
             var countEnShpsSunked = 0;
 
+            if (data.state=="your_turn") {
+                $("#enemiesTableId").find("td").attr("clickable", "true");
+                $("#makeShotsButtonID").show();
+            } else {
+                $("#enemiesTableId").find("td").attr("clickable", "false");
+                $("#makeShotsButtonID").hide();
+            }
 
             //// CHECK THE GAME FOR 'GAME OVER'
             if(data.state=="won"){
@@ -85,7 +109,6 @@ function loadMainJsonAndMethods(){
                 $("#makeShotsButtonID").hide();
                 $("#enemyShipsConditionDivId").hide();
             } else {
-                $("#makeShotsButtonID").show();
                 $("#enemyShipsConditionDivId").show();
             }
 
@@ -388,7 +411,7 @@ function reloadMainJson(){
     var state;
     var type;
     var locationBrowser = window.location.search.split("?gp=")[1];
-    $.getJSON("https://vast-waters-37875.herokuapp.com/api/game_view/"+locationBrowser, function(data){
+    $.getJSON("/api/game_view/"+locationBrowser, function(data){
         if (data.game_id!="") {
 
             enemyEmail = data.enemy;
@@ -403,11 +426,12 @@ function reloadMainJson(){
             $("#hostJoinId").text("Type: "+type);
 
 
-
-            if (data.state!="your_turn") {
-                $("#enemiesTableId").find("td").attr("clickable", "false");
-            } else {
+            if (data.state=="your_turn") {
                 $("#enemiesTableId").find("td").attr("clickable", "true");
+                $("#makeShotsButtonID").show();
+            } else {
+                $("#enemiesTableId").find("td").attr("clickable", "false");
+                $("#makeShotsButtonID").hide();
             }
             putPlayersShotsOnTheGrid();
             putEnemiesShotsOnPlayersGrid();
@@ -487,7 +511,6 @@ function reloadMainJson(){
                 $("#makeShotsButtonID").hide();
                 $("#enemyShipsConditionDivId").hide();
             } else {
-                $("#makeShotsButtonID").show();
                 $("#enemyShipsConditionDivId").show();
             }
 
@@ -576,11 +599,9 @@ $("#putShipsButtonId").click(function(){
             contentType: "application/json"
         })
         .done(function(response){
+            $("#alertBox").css("display", "block");
+            $("#cover").css("display", "block");
             $("#alertMessage").text(response);
-            setTimeout(function(){
-//                alert(response);
-                $("#alertMessage").text("");
-            }, 3000);
 
 
             $("#shipsContainerId").hide();
@@ -594,19 +615,17 @@ $("#putShipsButtonId").click(function(){
             $("#drop5").attr("draggable", "false");
          })
         .fail(function(response) {
+            $("#alertBox").css("display", "block");
+            $("#cover").css("display", "block");
             $("#alertMessage").text(response);
-            setTimeout(function(){
-//                alert(response);
-                $("#alertMessage").text("");
-            }, 3000);
+//            setTimeout(function(){
+//                $("#alertMessage").text("");
+//            }, 3000);
         });
     } else {
+            $("#alertBox").css("display", "block");
+            $("#cover").css("display", "block");
             $("#alertMessage").text("You haven't placed the ships on the grid! Please try again.");
-        setTimeout(function(){
-//          alert("You haven't placed the ships on the grid! Please try again.");
-            $("#alertMessage").text("");
-        }, 3000);
-
     }
 });
 
@@ -882,7 +901,6 @@ $("#makeShotsButtonID").click(function(){
         console.log(str1);
 
         shotsList.push(str1);
-//        console.log(str1);
     }
 
     console.log(shotsList);
@@ -898,12 +916,10 @@ $("#makeShotsButtonID").click(function(){
             contentType: "application/json"
         })
         .done(function(response){
+            $("#alertBox").css("display", "block");
+            $("#cover").css("display", "block");
+            $("#alertMessage").css("color", "darkred");
             $("#alertMessage").text(response);
-            setTimeout(function(){
-//                alert(response);
-                $("#alertMessage").text("");
-            }, 3000);
-
 
             for(var q = 0 ; q <= shotsList.length-1 ; q++){
                 console.log(shotsList[q]);
@@ -964,6 +980,9 @@ $("#makeShotsButtonID").click(function(){
                         $("#enemyShipsConditionDivId").css("display", "none");
                         $("#gameOverDivId").css("display", "block");
                         $("#gameOverStatsId").css("display", "block");
+                        $("#alertBox").css("display", "none");
+                        $("#cover").css("display", "none");
+                        $("#alertMessage").text("");
                         if(data.state=="won"){
                             $("#stateGameOverId").css("color", "darkgreen");
                         } else if(data.state=="lost"){
@@ -1024,15 +1043,10 @@ $("#makeShotsButtonID").click(function(){
             }, 500);
         })
         .fail(function(response) {
-//            $("#alertMessage").text(response);
-//            $("#alertMessage").text(response);
+            $("#alertBox").css("display", "block");
+            $("#cover").css("display", "block");
             $("#alertMessage").text("Please wait for the other player to shoot..");
             $("#alertMessage").css("color", "black");
-            setTimeout(function(){
-//              alert(response);
-                $("#alertMessage").text("");
-            }, 3000);
-
 
             for(var q=0 ; q <= shotsList.length-1 ; q++){
                 console.log(shotsList[q]);
@@ -1046,12 +1060,10 @@ $("#makeShotsButtonID").click(function(){
 
     count = 0;
     } else if(shotsList.length!=5) {
+        $("#alertBox").css("display", "block");
+        $("#cover").css("display", "block");
         $("#alertMessage").text("Please choose 5 locations.");
         $("#alertMessage").css("color", "brown");
-        setTimeout(function(){
-//            alert(response);
-            $("#alertMessage").text("");
-        }, 3000);
     }
 });
 
